@@ -111,3 +111,49 @@ print(f"celcius {celsius}")
 #A. Random Integers 
 #- np.random.randint()
 print(np.random.randint(5))
+
+#------ Indexing : 
+# - Accessing numpy arrays are very similar to python lists. 
+#-- to access sub arrays = arr[index of sub array]
+
+# ------Slicing in Numpy ------
+
+
+
+#----Filtering Data in Numpy 
+
+#To filter thru arrays we use the logical operators.
+##-- can filter np.nan so use np.isnan to filter the location of the np.nan 
+
+
+#-----FILTERING IN NUMPY -------#
+
+# np.where  function : 
+#- takes in a required first argument which is a boolean array.
+#-- True represents the locations of hte elements we want to filter.
+#-- returns a tuple of 1D arrays when only 1 argument is given.
+
+
+#---------------------------Statistics in NUMPY--#
+#- It is useful to analyze data for its trends. 
+print(arr.min()) # 
+#-alerts us to extreme outliers in the data.
+#-axis=0 <--- for column axis=1 <---- for rows.
+
+#Statistical metrics in Numpy
+#--np.mean(data), np.var(data), np.median(data) to find variance in the data.
+#- the np.mean take in a data which is a numpy array as arguments
+
+#------------Aggregation in Numpy----#
+# - To get the sum individual values in an array we use np.sum(arr)
+# - To get the sum of each column use np.sum(arr,axis=0)
+# - To get the sum of each row use np.sum(arr,axis=1)
+
+# ---Cumalative Sums in Numpy --> np.cumsum
+# - returns an array with cumaltive sums. 
+# - if the axis is not specified then it will return a flattened arrray.
+# - setting axis =0 operates on the columns 
+# - setting axis = 1 operates on the rows.
+
+#Concatenation 
+# - np.concatenate([data1,data2], axis=1)
