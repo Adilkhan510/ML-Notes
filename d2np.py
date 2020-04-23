@@ -49,12 +49,65 @@ print(arr5)
 #-Use np.reshape 
 #--takes in an array and a new shape as the required arguments.
 #--Reshaped array must contain exactly the same amunt of elements.
-arr = np.arange(8)
+arr11 = np.arange(8)
 
-reshaped_arr = np.reshape(arr, (2, 4))
+reshaped_arr = np.reshape(arr11, (2, 4))
 print(repr(reshaped_arr))
 print('New shape: {}'.format(reshaped_arr.shape))
 
-reshaped_arr = np.reshape(arr, (-1, 2, 2))
+reshaped_arr = np.reshape(arr11, (-1, 2, 2))
 print(repr(reshaped_arr))
 print('New shape: {}'.format(reshaped_arr.shape))
+
+#----To flatten an array :
+#- arr= np.array()
+#- arr.flatten()
+
+#--------Transposing Data : 
+#-Use this to transpose the data into the proper format.
+
+#-----Zeros and Ones 
+#- np.zeros(4) <---- describes the shape of the array
+#- np.zeros_like(arr) <--- creates an array with zeros like arr
+
+
+#------------------Numpy MATH-------------#
+#Goals for this section
+# -- Learn how to perform math operations in numpy
+# -- Write code using Numpy math functions
+
+#Arithmetic:
+arr111 = np.array([[1, 2], [3, 4]])
+# Add 1 to element values
+print(repr(arr + 1))
+# Subtract element values by 1.2
+print(repr(arr - 1.2))
+# Double element values
+print(repr(arr * 2))
+# Halve element values
+print(repr(arr / 2))
+# Integer division (half)
+print(repr(arr // 2))
+# Square element values
+print(repr(arr**2))
+# Square root element values
+print(repr(arr**0.5))
+
+
+#Convert Farenheit to celsius : 
+def f2c(temps):
+    return (5/9)*(temps-32)
+fahrenheits = np.array([32,-4,14,-40])
+celsius = f2c(fahrenheits)
+print(f"celcius {celsius}")
+
+#--- Performing arithmetic doesn't change the original array it simply creates a new one.
+
+#--- non-linear functions:
+#-
+
+#How to generate random numbers and arrays from different random distribution.
+
+#A. Random Integers 
+#- np.random.randint()
+print(np.random.randint(5))
